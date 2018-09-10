@@ -2,15 +2,23 @@ package Cuong.dev;
 
 public class Basic {
 	public static void main(String[] agrs) {
-		   int a=15;
-		   int b=9;
-		   int tong=a+b;
-		   int hieu=a-b;
-		   double tich=a*b;
-		   double thuong=a/b;
-		   System.out.println("tong la:"+tong);
-		   System.out.println("hieu la:"+hieu);
-		   System.out.println("tich la:"+tich);
-		   System.out.println("thuong la:"+thuong);
+		double a=-5;
+		   double b=-4;
+		   double c=1;
+		   double x,x1,x2,delta;
+		   delta = (b*b)-(4*a*c);
+		   if(delta>0) {
+			   x1=((-b-Math.sqrt(delta))/(2*a));
+			   System.out.println("nghiem x1:"+x1);
+			   x2=((-b+Math.sqrt(delta))/(2*a));
+			   System.out.println("nghiem x2:"+x2);
+		   }
+		   else if(delta<0) {
+			   System.out.println("phuong trinh vo ngiem");
+		   }
+		   else if(delta==0) {
+			   x=-b/(2*a);
+			   System.out.println("nghiem kep x"+x);
+		   }
 	   }
 }  
